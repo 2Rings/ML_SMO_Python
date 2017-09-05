@@ -10,6 +10,7 @@ import os
 import numpy as np
 import random
 
+#parameter
 K=[]
 xPro=[]
 X=[]
@@ -129,7 +130,7 @@ def renew_alpha_b(i,j,Ei,Ej):
     error_Cache(i,j,alpha1new,alpha2newclipped,delta_b)
     return 1
 
-#takeStep : optimize alpha1,alpha2
+#takeStep : optimize alpha1,alpha2, if success return 1,else return 0
 def takeStep(i,j):
     if(i==j): return 0
     Ei=Ej=0.0
